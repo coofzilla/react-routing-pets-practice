@@ -12,6 +12,8 @@ function App() {
         <Navigation />
         <Switch>
           <Route path="/:type/:id" component={PetDetailsPage} />
+          <Route path="/search" component={SearchPage} />
+          <Route path="/pet-details-not-found" component={PetDetailsNotFound} />
           <Route path="/:type?" component={HomePage} />
         </Switch>
       </Router>
